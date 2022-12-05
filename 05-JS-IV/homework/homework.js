@@ -101,6 +101,9 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // // Tu código:
+  //usuario={
+  //amigos:[]
+  //}
   usuario.amigos.push(nuevoAmigo);
   return usuario;
 }
@@ -111,6 +114,11 @@ function pasarUsuarioAPremium(usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
+  //usuarios=[
+  //usuario={
+  //esPremium:true
+  //}
+  //]
   for (let i = 0; i < usuarios.length; i++) {
     usuarios[i].esPremium = true;
   }
@@ -124,6 +132,13 @@ function sumarLikesDeUsuario(usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
+  //usuario={
+  //  posts:[
+  //    post = { likes: 9 }
+  //    post = { likes: 25 }
+  //    post = { likes: 6 }
+  //]
+  //}
 
   let suma = 0;
 
@@ -144,6 +159,14 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
+  //producto={
+  //    precio=precio,
+  //    porcentadeDeDescuento:porcentaje
+  //    calcularPrecioDescuento(){
+  //precio-(precio*porcentajeDeDescuento)
+  //}
+
+  //}
   producto.calcularPrecioDescuento = function () {
     return this.precio - this.precio * this.porcentajeDeDescuento;
   };
